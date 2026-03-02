@@ -6,7 +6,7 @@
     <title>오밀소프트 | 공식 홈페이지</title>
     <meta
       name="description"
-      content="오밀소프트 공식 홈페이지. 모바일 앱 개발 및 운영, 타다닥 서비스, 사업자 정보 및 문의 채널을 제공합니다."
+      content="오밀소프트 공식 홈페이지. 모바일 앱 개발 및 운영, 타닥타닥 서비스, 사업자 정보 및 문의 채널을 제공합니다."
     />
     <meta property="og:title" content="오밀소프트 공식 홈페이지" />
     <meta property="og:description" content="모바일 앱 개발 및 운영" />
@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260302-2" />
   </head>
   <body>
     <div class="bg-orb bg-orb--left" aria-hidden="true"></div>
@@ -67,8 +67,13 @@
         <h2>운영 서비스</h2>
         <article class="service-card">
           <div class="service-card__badge">LIVE</div>
-          <h3>타다닥</h3>
-          <p>모바일 타자 연습 애플리케이션입니다.</p>
+          <div class="service-card__head">
+            <img class="service-card__icon" src="assets/tadaktadak-icon.jpg" alt="타닥타닥 앱 아이콘" />
+            <div>
+              <h3>타닥타닥</h3>
+              <p>모바일 타자 연습 애플리케이션입니다.</p>
+            </div>
+          </div>
           <ul>
             <li>iOS App Store 배포 중</li>
             <li>Android Google Play 출시 예정</li>
@@ -104,7 +109,7 @@
       <p>© <span id="year"></span> OMILSOFT. All rights reserved.</p>
     </footer>
 
-    <div class="modal-backdrop is-hidden" id="platform-modal-backdrop" role="presentation">
+    <div class="modal-backdrop" id="platform-modal-backdrop" role="presentation" hidden>
       <section class="platform-modal" role="dialog" aria-modal="true" aria-labelledby="platform-modal-title">
         <div class="platform-modal__header">
           <h2 id="platform-modal-title">플랫폼 선택</h2>
@@ -135,11 +140,11 @@
       const closePlatformModalButton = document.getElementById('close-platform-modal');
 
       const closePlatformModal = () => {
-        modalBackdrop.classList.add('is-hidden');
+        modalBackdrop.hidden = true;
       };
 
       openPlatformModalButton.addEventListener('click', () => {
-        modalBackdrop.classList.remove('is-hidden');
+        modalBackdrop.hidden = false;
       });
 
       closePlatformModalButton.addEventListener('click', closePlatformModal);

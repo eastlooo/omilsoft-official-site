@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   background:
@@ -205,8 +209,29 @@ main {
 }
 
 .service-card h3 {
-  margin: 12px 0 8px;
+  margin: 0 0 8px;
   font-size: 1.6rem;
+}
+
+.service-card__head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.service-card__icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid rgba(34, 47, 80, 0.28);
+  box-shadow: 0 10px 18px rgba(26, 36, 62, 0.15);
+  flex: 0 0 auto;
+}
+
+.service-card__head p {
+  margin: 0;
 }
 
 .service-card ul {
@@ -248,10 +273,6 @@ main {
   backdrop-filter: blur(4px);
   z-index: 50;
   padding: 18px;
-}
-
-.modal-backdrop.is-hidden {
-  display: none;
 }
 
 .platform-modal {
@@ -347,5 +368,9 @@ main {
 
   .platform-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-card__head {
+    align-items: flex-start;
   }
 }
