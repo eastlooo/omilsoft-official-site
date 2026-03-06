@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오밀소프트 | 사업자/운영자 정보</title>
+    <meta
+      name="description"
+      content="오밀소프트 사업자 및 운영자 정보 페이지."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260306-1" />
+  </head>
+  <body>
+    <div class="bg-orb bg-orb--left" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--right" aria-hidden="true"></div>
+
+    <header class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <p class="eyebrow">OMILSOFT OPERATOR INFO</p>
+        <h1>오밀소프트<br />사업자/운영자 정보</h1>
+        <p class="hero__subtitle">
+          타닥타닥 서비스 운영 주체 정보를 독립 URL로 제공합니다.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="./index.html">공식 사이트로 돌아가기</a>
+          <a class="btn btn--ghost" href="https://eastlooo.github.io/tadak-legal/operator-info.html" target="_blank" rel="noreferrer">법적 허브 버전 보기</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container operator-page">
+      <section class="panel">
+        <h2>기본 정보</h2>
+        <dl class="meta-grid">
+          <div class="meta-item">
+            <dt>회사명</dt>
+            <dd>오밀소프트</dd>
+          </div>
+          <div class="meta-item">
+            <dt>대표자</dt>
+            <dd>정동천</dd>
+          </div>
+          <div class="meta-item">
+            <dt>사업자등록번호</dt>
+            <dd>766-11-02666</dd>
+          </div>
+          <div class="meta-item">
+            <dt>사업장 소재지</dt>
+            <dd>서울특별시 동작구 상도동</dd>
+          </div>
+          <div class="meta-item">
+            <dt>이메일</dt>
+            <dd><a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></dd>
+          </div>
+          <div class="meta-item">
+            <dt>연락처</dt>
+            <dd><a href="tel:+821043161505">010-4316-1505</a></dd>
+          </div>
+        </dl>
+        <div class="operator-summary">
+          <p>정책, 지원, 계정 삭제 링크는 공식 사이트 홈 또는 타닥타닥 Legal Hub에서 함께 확인할 수 있습니다.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>© <span id="year"></span> OMILSOFT. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
