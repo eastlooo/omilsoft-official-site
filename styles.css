@@ -310,6 +310,12 @@ a {
   background: rgba(255, 247, 252, 0.66);
 }
 
+.btn--store {
+  color: #fff;
+  background: linear-gradient(135deg, rgba(255, 95, 162, 0.98), rgba(255, 60, 138, 0.94));
+  box-shadow: 0 18px 32px rgba(255, 79, 155, 0.24);
+}
+
 .hero-dashboard {
   display: grid;
   gap: 16px;
@@ -471,13 +477,18 @@ a {
   gap: 14px;
 }
 
+.panel--company .data-grid {
+  gap: 16px;
+}
+
 .data-card {
   margin: 0;
-  padding: 18px 18px 16px;
+  padding: 20px 20px 18px;
   border-radius: 24px;
   border: 1px solid var(--line);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 251, 248, 0.88)),
+    radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.8), transparent 36%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 251, 248, 0.9)),
     rgba(255, 255, 255, 0.72);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88);
 }
@@ -588,6 +599,11 @@ a {
   color: rgba(249, 244, 251, 0.74);
 }
 
+.service-lead {
+  margin-top: 2px;
+  max-width: 44ch;
+}
+
 .service-badges {
   display: flex;
   flex-wrap: wrap;
@@ -621,10 +637,43 @@ a {
   color: rgba(249, 244, 251, 0.82);
 }
 
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.feature-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 246, 251, 0.9);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.service-actions {
+  margin-top: 20px;
+}
+
+.policy-primary-grid,
 .policy-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
+}
+
+.policy-primary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 14px;
+}
+
+.policy-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .policy-grid--compact {
@@ -634,7 +683,7 @@ a {
 .policy-card {
   display: grid;
   gap: 12px;
-  min-height: 208px;
+  min-height: 188px;
   align-content: start;
   padding: 20px 18px;
   border-radius: 24px;
@@ -678,6 +727,20 @@ a {
   color: #963561;
   font-size: 0.84rem;
   font-weight: 800;
+}
+
+.policy-card--primary {
+  min-height: 220px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(255, 208, 227, 0.34), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 247, 250, 0.92));
+  box-shadow:
+    0 16px 32px rgba(255, 79, 155, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+}
+
+.policy-card--muted {
+  min-height: 176px;
 }
 
 .trust-note {
@@ -755,6 +818,7 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .policy-primary-grid,
   .policy-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -810,6 +874,7 @@ a {
   .dashboard-grid,
   .data-grid,
   .contact-grid,
+  .policy-primary-grid,
   .policy-grid {
     grid-template-columns: 1fr;
   }
@@ -817,6 +882,10 @@ a {
   .dashboard-tile,
   .policy-card {
     min-height: auto;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
   }
 
   .service-stage__visual {
