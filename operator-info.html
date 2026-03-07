@@ -4,68 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>오밀소프트 | 사업자/운영자 정보</title>
-    <meta
-      name="description"
-      content="오밀소프트 사업자 및 운영자 정보 페이지."
-    />
+    <meta name="description" content="오밀소프트 사업자 및 운영자 정보 페이지." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260306-1" />
+    <link rel="stylesheet" href="styles.css?v=20260307-1" />
   </head>
   <body>
-    <div class="bg-orb bg-orb--left" aria-hidden="true"></div>
-    <div class="bg-orb bg-orb--right" aria-hidden="true"></div>
+    <div class="site-noise" aria-hidden="true"></div>
+    <div class="site-glow site-glow--pink" aria-hidden="true"></div>
+    <div class="site-glow site-glow--mint" aria-hidden="true"></div>
 
-    <header class="hero">
-      <div class="hero__overlay"></div>
-      <div class="hero__content container">
-        <p class="eyebrow">OMILSOFT OPERATOR INFO</p>
-        <h1>오밀소프트<br />사업자/운영자 정보</h1>
-        <p class="hero__subtitle">
-          타닥타닥 서비스 운영 주체 정보를 독립 URL로 제공합니다.
-        </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="./index.html">공식 사이트로 돌아가기</a>
-          <a class="btn btn--ghost" href="https://eastlooo.github.io/tadak-legal/operator-info.html" target="_blank" rel="noreferrer">법적 허브 버전 보기</a>
-        </div>
+    <header class="hero hero--compact">
+      <div class="container">
+        <section class="hero-card hero-card--compact">
+          <div class="hero-copy">
+            <p class="eyebrow">OMILSOFT OPERATOR INFO</p>
+            <h1>
+              오밀소프트
+              <span class="hero-emphasis">사업자/운영자 정보</span>
+            </h1>
+            <p class="hero-subtitle">
+              타닥타닥 서비스 운영 주체 정보를 독립 URL로 제공합니다.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn--primary" href="./index.html">공식 사이트로 돌아가기</a>
+              <a
+                class="btn btn--ghost"
+                href="https://eastlooo.github.io/tadak-legal/operator-info.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                법적 허브 버전 보기
+              </a>
+            </div>
+          </div>
+          <aside class="hero-aside hero-aside--compact">
+            <div class="hero-panel hero-panel--compact">
+              <p class="hero-panel__label">Operator Verification</p>
+              <h2>공식 사이트 홈과 동일한 기준으로 운영자 정보와 정책 진입점을 정리합니다.</h2>
+            </div>
+          </aside>
+        </section>
       </div>
     </header>
 
-    <main class="container operator-page">
-      <section class="panel">
-        <h2>기본 정보</h2>
-        <dl class="meta-grid">
-          <div class="meta-item">
+    <main class="container operator-main">
+      <section class="panel panel--company">
+        <div class="section-head">
+          <p class="section-kicker">Official Operator Profile</p>
+          <h2>기본 정보</h2>
+          <p>사업자 정보가 입력 폼이 아니라 공식 데이터 패널처럼 보이도록 레이아웃을 재구성했습니다.</p>
+        </div>
+        <dl class="data-grid">
+          <div class="data-card">
             <dt>회사명</dt>
             <dd>오밀소프트</dd>
           </div>
-          <div class="meta-item">
+          <div class="data-card">
             <dt>대표자</dt>
             <dd>정동천</dd>
           </div>
-          <div class="meta-item">
+          <div class="data-card data-card--accent">
             <dt>사업자등록번호</dt>
             <dd>766-11-02666</dd>
           </div>
-          <div class="meta-item">
+          <div class="data-card">
             <dt>사업장 소재지</dt>
             <dd>서울특별시 동작구 상도동</dd>
           </div>
-          <div class="meta-item">
+          <div class="data-card">
             <dt>이메일</dt>
             <dd><a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></dd>
           </div>
-          <div class="meta-item">
+          <div class="data-card">
             <dt>연락처</dt>
             <dd><a href="tel:+821043161505">010-4316-1505</a></dd>
           </div>
         </dl>
-        <div class="operator-summary">
+      </section>
+
+      <section class="panel panel--policy">
+        <div class="section-head">
+          <p class="section-kicker">Related Official Links</p>
+          <h2>관련 공식 링크</h2>
           <p>정책, 지원, 계정 삭제 링크는 공식 사이트 홈 또는 타닥타닥 Legal Hub에서 함께 확인할 수 있습니다.</p>
+        </div>
+        <div class="policy-grid policy-grid--compact">
+          <a class="policy-card" href="./index.html">
+            <span class="policy-card__tag">Site</span>
+            <strong>공식 사이트 홈</strong>
+            <p>회사 정보, 운영 서비스, 정책 링크를 한 번에 확인</p>
+            <span class="policy-card__meta">홈으로 이동</span>
+          </a>
+          <a class="policy-card" href="https://eastlooo.github.io/tadak-legal/" target="_blank" rel="noreferrer">
+            <span class="policy-card__tag">Hub</span>
+            <strong>Legal Hub</strong>
+            <p>정책, 지원, 계정 삭제, 운영자 정보를 모은 허브</p>
+            <span class="policy-card__meta">공식 링크</span>
+          </a>
+          <a class="policy-card" href="https://eastlooo.github.io/tadak-legal/support.html" target="_blank" rel="noreferrer">
+            <span class="policy-card__tag">Support</span>
+            <strong>Support</strong>
+            <p>지원 이메일과 관련 문서 안내</p>
+            <span class="policy-card__meta">지원 채널</span>
+          </a>
         </div>
       </section>
     </main>
