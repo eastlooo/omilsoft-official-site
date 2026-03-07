@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>오밀소프트 | 사업자/운영자 정보</title>
     <meta name="description" content="오밀소프트 사업자 및 운영자 정보 페이지." />
+    <meta name="theme-color" content="#1d1630" />
     <link rel="icon" href="./assets/tadaktadak-icon.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,29 +13,28 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260307-1" />
+    <link rel="stylesheet" href="styles.css?v=20260307-2" />
   </head>
-  <body>
-    <div class="site-noise" aria-hidden="true"></div>
-    <div class="site-glow site-glow--pink" aria-hidden="true"></div>
-    <div class="site-glow site-glow--mint" aria-hidden="true"></div>
+  <body class="page-operator">
+    <div class="backdrop backdrop--pink" aria-hidden="true"></div>
+    <div class="backdrop backdrop--mint" aria-hidden="true"></div>
+    <div class="backdrop-grid" aria-hidden="true"></div>
 
     <header class="hero hero--compact">
       <div class="container">
-        <section class="hero-card hero-card--compact">
+        <section class="hero-stage hero-stage--compact">
           <div class="hero-copy">
             <p class="eyebrow">OMILSOFT OPERATOR INFO</p>
-            <h1>
-              오밀소프트
-              <span class="hero-emphasis">사업자/운영자 정보</span>
-            </h1>
+            <h1>사업자/운영자 정보</h1>
+            <p class="hero-focus">타닥타닥 서비스 운영 주체 정보를 독립 URL로 제공합니다.</p>
             <p class="hero-subtitle">
-              타닥타닥 서비스 운영 주체 정보를 독립 URL로 제공합니다.
+              공식 사이트 홈과 legal hub에서 사용하는 동일한 기준으로 사업자 정보와 관련 진입점을
+              정리했습니다.
             </p>
             <div class="hero-actions">
               <a class="btn btn--primary" href="./index.html">공식 사이트로 돌아가기</a>
               <a
-                class="btn btn--ghost"
+                class="btn btn--secondary"
                 href="https://eastlooo.github.io/tadak-legal/operator-info.html"
                 target="_blank"
                 rel="noreferrer"
@@ -43,22 +43,40 @@
               </a>
             </div>
           </div>
-          <aside class="hero-aside hero-aside--compact">
-            <div class="hero-panel hero-panel--compact">
-              <p class="hero-panel__label">Operator Verification</p>
-              <h2>공식 사이트 홈과 동일한 기준으로 운영자 정보와 정책 진입점을 정리합니다.</h2>
+
+          <aside class="hero-dashboard hero-dashboard--compact">
+            <div class="dashboard-intro">
+              <p class="dashboard-label">Operator Verification</p>
+              <h2>공식 운영 정보와 관련 링크를 같은 시선으로 확인할 수 있게 구성했습니다.</h2>
+            </div>
+            <div class="dashboard-grid dashboard-grid--compact">
+              <a class="dashboard-tile" href="./index.html">
+                <span class="dashboard-tile__kicker">SITE</span>
+                <strong>공식 사이트 홈</strong>
+                <span>회사 정보, 운영 서비스, 정책 링크</span>
+              </a>
+              <a
+                class="dashboard-tile"
+                href="https://eastlooo.github.io/tadak-legal/support.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="dashboard-tile__kicker">SUPPORT</span>
+                <strong>지원 채널</strong>
+                <span>omilsoft@gmail.com</span>
+              </a>
             </div>
           </aside>
         </section>
       </div>
     </header>
 
-    <main class="container operator-main">
+    <main class="container page-shell page-shell--compact">
       <section class="panel panel--company">
         <div class="section-head">
           <p class="section-kicker">Official Operator Profile</p>
           <h2>기본 정보</h2>
-          <p>사업자 정보가 입력 폼이 아니라 공식 데이터 패널처럼 보이도록 레이아웃을 재구성했습니다.</p>
+          <p>사업자 기본 정보와 문의 수단을 한 페이지에서 확인할 수 있습니다.</p>
         </div>
         <dl class="data-grid">
           <div class="data-card">

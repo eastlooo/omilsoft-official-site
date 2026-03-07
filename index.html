@@ -12,7 +12,7 @@
     <meta property="og:description" content="타닥타닥 서비스와 법적/지원 링크 안내" />
     <meta property="og:type" content="website" />
     <meta name="google-site-verification" content="E7XOMuVMC_yO1XLhVgQ4-GxxKSEPZvkSftyRpqZfdfg" />
-    <meta name="theme-color" content="#23132f" />
+    <meta name="theme-color" content="#1d1630" />
     <link rel="icon" href="./assets/tadaktadak-icon.jpg" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1BCDWKTDV"></script>
     <script>
@@ -29,13 +29,13 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260307-1" />
+    <link rel="stylesheet" href="styles.css?v=20260307-2" />
   </head>
-  <body>
-    <div class="site-noise" aria-hidden="true"></div>
-    <div class="site-glow site-glow--pink" aria-hidden="true"></div>
-    <div class="site-glow site-glow--mint" aria-hidden="true"></div>
-    <div class="site-glow site-glow--lemon" aria-hidden="true"></div>
+  <body class="page-home">
+    <div class="backdrop backdrop--pink" aria-hidden="true"></div>
+    <div class="backdrop backdrop--mint" aria-hidden="true"></div>
+    <div class="backdrop backdrop--lemon" aria-hidden="true"></div>
+    <div class="backdrop-grid" aria-hidden="true"></div>
 
     <header class="hero">
       <div class="container">
@@ -46,61 +46,76 @@
           <a href="#contact">연락처</a>
         </nav>
 
-        <section class="hero-card">
+        <section class="hero-stage">
           <div class="hero-copy">
-            <p class="eyebrow">OMILSOFT OFFICIAL</p>
-            <h1>
-              오밀소프트
-              <span class="hero-emphasis">공식 사이트 및 제출용 링크</span>
-            </h1>
+            <p class="eyebrow">OMILSOFT</p>
+            <h1>오밀소프트</h1>
+            <p class="hero-focus">서비스 운영 정보와 공식 링크를 차분하게 모아 둔 회사 페이지입니다.</p>
             <p class="hero-subtitle">
               타닥타닥 서비스 운영 주체 정보, 지원 채널, 계정 삭제 안내, 개인정보처리방침과
-              이용약관을 한 곳에서 확인할 수 있도록 정리한 공식 페이지입니다.
+              이용약관을 한 곳에서 확인할 수 있도록 정리했습니다.
             </p>
+
             <div class="hero-statuses" aria-label="서비스 상태">
-              <span class="status-pill status-pill--dark">iOS App Store 배포 중</span>
-              <span class="status-pill status-pill--soft">Android Google Play 첫 출시 준비 중</span>
+              <span class="status-pill">iOS App Store 배포 중</span>
+              <span class="status-pill">Android Google Play 첫 출시 준비 중</span>
               <span class="status-pill status-pill--mint">공식 제출용 링크 허브 운영 중</span>
             </div>
+
             <div class="hero-actions">
               <a class="btn btn--primary" href="mailto:omilsoft@gmail.com">문의하기</a>
               <a
-                class="btn btn--ghost"
+                class="btn btn--secondary"
                 href="https://eastlooo.github.io/tadak-legal/"
                 target="_blank"
                 rel="noreferrer"
               >
                 법적 허브 열기
               </a>
-              <a class="btn btn--soft" href="./operator-info.html">운영자 정보 보기</a>
+              <a class="btn btn--tertiary" href="./operator-info.html">운영자 정보 보기</a>
             </div>
           </div>
 
-          <aside class="hero-aside">
-            <div class="hero-panel">
-              <p class="hero-panel__label">Verified Link Desk</p>
-              <h2>제출용 링크와 운영 정보가 분리되지 않도록 같은 기준으로 관리합니다.</h2>
-              <ul class="hero-checks">
-                <li>법적 허브 / Privacy / Terms / Support / Account Deletion 연결</li>
-                <li>사업자 정보 독립 URL 제공</li>
-                <li>스토어 제출 목적에 맞는 공식 채널 유지</li>
-              </ul>
+          <aside class="hero-dashboard" aria-label="공식 진입점">
+            <div class="dashboard-intro">
+              <p class="dashboard-label">Official Access</p>
+              <h2>스토어 제출, 지원, 정책 링크가 따로 놀지 않도록 같은 톤으로 관리합니다.</h2>
+              <p>
+                제출용 링크만 따로 모아 둔 느낌이 아니라, 공식 사이트와 legal hub가 자연스럽게
+                이어지도록 구성했습니다.
+              </p>
             </div>
-            <div class="hero-mini-grid">
-              <a class="mini-card" href="./operator-info.html">
-                <span class="mini-card__eyebrow">BUSINESS</span>
+
+            <div class="dashboard-grid">
+              <a
+                class="dashboard-tile dashboard-tile--feature"
+                href="https://eastlooo.github.io/tadak-legal/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="dashboard-tile__kicker">LEGAL HUB</span>
+                <strong>정책 · 지원 · 계정 삭제</strong>
+                <span>스토어 제출과 앱 내 안내에 사용하는 공식 문서 허브</span>
+              </a>
+              <a class="dashboard-tile" href="./operator-info.html">
+                <span class="dashboard-tile__kicker">BUSINESS</span>
                 <strong>사업자/운영자 정보</strong>
                 <span>공식 독립 URL</span>
               </a>
               <a
-                class="mini-card"
+                class="dashboard-tile"
                 href="https://eastlooo.github.io/tadak-legal/support.html"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span class="mini-card__eyebrow">SUPPORT</span>
+                <span class="dashboard-tile__kicker">SUPPORT</span>
                 <strong>지원 채널</strong>
                 <span>omilsoft@gmail.com</span>
+              </a>
+              <a class="dashboard-tile dashboard-tile--soft" href="#service">
+                <span class="dashboard-tile__kicker">PRODUCT</span>
+                <strong>타닥타닥</strong>
+                <span>iOS 배포 중 · Android 첫 출시 준비 중</span>
               </a>
             </div>
           </aside>
@@ -108,70 +123,68 @@
       </div>
     </header>
 
-    <main class="container home-main">
-      <div class="main-grid">
-        <section class="panel panel--company" id="company">
-          <div class="section-head">
-            <p class="section-kicker">Official Company Profile</p>
-            <h2>회사 정보</h2>
-            <p>폼 입력칸처럼 보이지 않도록, 검증된 운영 정보 패널 형태로 정리했습니다.</p>
+    <main class="container page-shell">
+      <section class="panel panel--company" id="company">
+        <div class="section-head">
+          <p class="section-kicker">Official Company Profile</p>
+          <h2>회사 정보</h2>
+          <p>서비스 운영 주체와 사업자 기본 정보를 확인할 수 있습니다.</p>
+        </div>
+        <dl class="data-grid">
+          <div class="data-card">
+            <dt>회사명</dt>
+            <dd>오밀소프트</dd>
           </div>
-          <dl class="data-grid">
-            <div class="data-card">
-              <dt>회사명</dt>
-              <dd>오밀소프트</dd>
-            </div>
-            <div class="data-card">
-              <dt>대표자</dt>
-              <dd>정동천</dd>
-            </div>
-            <div class="data-card data-card--accent">
-              <dt>사업자등록번호</dt>
-              <dd>766-11-02666</dd>
-            </div>
-            <div class="data-card">
-              <dt>사업장 소재지</dt>
-              <dd>서울특별시 동작구 상도동</dd>
-            </div>
-          </dl>
-          <div class="panel-footer">
-            <a class="inline-link" href="./operator-info.html">사업자/운영자 정보 독립 URL</a>
+          <div class="data-card">
+            <dt>대표자</dt>
+            <dd>정동천</dd>
           </div>
-        </section>
+          <div class="data-card data-card--accent">
+            <dt>사업자등록번호</dt>
+            <dd>766-11-02666</dd>
+          </div>
+          <div class="data-card">
+            <dt>사업장 소재지</dt>
+            <dd>서울특별시 동작구 상도동</dd>
+          </div>
+        </dl>
+        <div class="panel-footer">
+          <a class="inline-link" href="./operator-info.html">사업자/운영자 정보 독립 URL</a>
+        </div>
+      </section>
 
-        <section class="panel panel--service" id="service">
-          <div class="section-head">
-            <p class="section-kicker">Live Product</p>
-            <h2>운영 서비스</h2>
-            <p>타닥타닥의 브랜드 인상과 출시 상태를 단순한 목록이 아니라 제품 카드처럼 보여줍니다.</p>
+      <section class="panel panel--service" id="service">
+        <div class="section-head">
+          <p class="section-kicker">Live Product</p>
+          <h2>운영 서비스</h2>
+          <p>현재 운영 중인 서비스와 출시 상태를 안내합니다.</p>
+        </div>
+        <article class="service-stage">
+          <div class="service-stage__visual">
+            <div class="service-halo" aria-hidden="true"></div>
+            <img class="service-icon" src="assets/tadaktadak-icon.jpg" alt="타닥타닥 앱 아이콘" />
           </div>
-          <article class="service-feature">
-            <div class="service-feature__visual">
-              <div class="service-orbit" aria-hidden="true"></div>
-              <img class="service-icon" src="assets/tadaktadak-icon.jpg" alt="타닥타닥 앱 아이콘" />
+          <div class="service-stage__copy">
+            <div class="service-badges">
+              <span class="service-badge service-badge--live">LIVE</span>
+              <span class="service-badge">Sweet Candy</span>
             </div>
-            <div class="service-feature__content">
-              <div class="service-badges">
-                <span class="service-badge service-badge--live">LIVE</span>
-                <span class="service-badge">Sweet Candy</span>
-              </div>
-              <h3>타닥타닥</h3>
-              <p>모바일 타자 연습 애플리케이션입니다.</p>
-              <ul class="feature-list">
-                <li>iOS App Store 배포 중</li>
-                <li>Android Google Play 첫 출시 준비 중</li>
-                <li>자리 연습, 단어 연습, 결과 리포트, 커뮤니티 글 연습 제공</li>
-              </ul>
-            </div>
-          </article>
-        </section>
-      </div>
+            <h3>타닥타닥</h3>
+            <p>모바일 타자 연습 애플리케이션입니다.</p>
+            <ul class="feature-list">
+              <li>iOS App Store 배포 중</li>
+              <li>Android Google Play 첫 출시 준비 중</li>
+              <li>자리 연습, 단어 연습, 결과 리포트, 커뮤니티 글 연습 제공</li>
+            </ul>
+          </div>
+        </article>
+      </section>
 
       <section class="panel panel--policy" id="policy">
         <div class="section-head">
           <p class="section-kicker">Verified Official Links</p>
           <h2>정책 및 제출용 링크</h2>
-          <p>단순 나열이 아니라, 역할과 목적이 보이는 공식 링크 허브 형태로 정리했습니다.</p>
+          <p>스토어 제출과 공식 안내에 사용하는 링크를 한 번에 제공합니다.</p>
         </div>
 
         <div class="policy-grid">
@@ -220,7 +233,8 @@
         </div>
 
         <div class="trust-note">
-          앱 내 `terms/privacy` 공개 링크는 기존 `tadak-legal` URL을 유지하고, 스토어 제출용 추가 URL도 동일 허브 기준으로 맞춥니다.
+          앱 내 `terms/privacy` 공개 링크는 기존 `tadak-legal` URL을 유지하고, 스토어 제출용 추가 URL도
+          동일 허브 기준으로 맞춥니다.
         </div>
       </section>
 
@@ -228,7 +242,7 @@
         <div class="section-head">
           <p class="section-kicker">Primary Contact</p>
           <h2>연락처</h2>
-          <p>지원과 법적 문의 모두 공식 채널로 수렴되도록 구성했습니다.</p>
+          <p>지원과 법적 문의에 사용하는 공식 연락처입니다.</p>
         </div>
         <div class="contact-grid">
           <a class="contact-card" href="mailto:omilsoft@gmail.com">
