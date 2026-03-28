@@ -320,8 +320,9 @@ a { color: inherit; }
 
 /* ── Features ── */
 .features {
-  padding: 80px 0;
-  background: linear-gradient(180deg, var(--bg-deep), var(--bg));
+  padding: 100px 0 80px;
+  background: var(--bg);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .section-header {
@@ -389,8 +390,9 @@ a { color: inherit; }
 
 /* ── Reviews ── */
 .reviews {
-  padding: 80px 0;
-  background: linear-gradient(180deg, var(--bg), var(--bg-deep));
+  padding: 100px 0 80px;
+  background: linear-gradient(180deg, rgba(30, 27, 75, 0.4), var(--bg));
+  border-top: 1px solid rgba(56, 189, 248, 0.06);
 }
 
 .reviews-header {
@@ -447,10 +449,11 @@ a { color: inherit; }
 
 /* ── Final CTA ── */
 .final-cta {
-  padding: 80px 0;
+  padding: 120px 0 100px;
   text-align: center;
   background:
-    radial-gradient(ellipse at 50% 50%, rgba(56, 189, 248, 0.08), transparent 60%);
+    radial-gradient(ellipse at 50% 40%, rgba(56, 189, 248, 0.1), transparent 50%),
+    var(--bg-deep);
 }
 
 .final-cta h2 {
@@ -465,7 +468,7 @@ a { color: inherit; }
 
 /* ── SEO / FAQ ── */
 .seo-section {
-  padding: 60px 0;
+  padding: 48px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
