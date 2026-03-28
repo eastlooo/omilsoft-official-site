@@ -110,11 +110,14 @@ a { color: inherit; }
 /* ── Typing Demo ── */
 .demo-section {
   margin-top: 40px;
-  padding: 28px;
+  padding: 32px;
   border-radius: 20px;
-  border: 1px solid rgba(56, 189, 248, 0.18);
-  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(56, 189, 248, 0.06), transparent 60%),
+    rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(12px);
+  box-shadow: 0 0 60px rgba(56, 189, 248, 0.08), 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .demo-header {
