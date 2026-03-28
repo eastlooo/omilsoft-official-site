@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모바일 타자 연습 - 타닥타닥 | 한글 타자 연습 앱</title>
+    <meta
+      name="description"
+      content="모바일에서 한글 타자 연습을 시작하세요. 타닥타닥은 자리 연습, 단어 연습, 커뮤니티 글 연습까지 지원하는 스마트폰 타자 연습 앱입니다. iOS와 Android에서 무료 다운로드."
+    />
+    <meta property="og:title" content="모바일 타자 연습 - 타닥타닥" />
+    <meta property="og:description" content="한컴타자연습은 PC에서만. 타닥타닥은 어디서든. 모바일 타자 연습 앱을 지금 체험해보세요." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eastlooo.github.io/omilsoft-official-site/tadak/" />
+    <meta property="og:image" content="https://eastlooo.github.io/omilsoft-official-site/assets/omilsoft-og.png" />
+    <meta property="og:image:alt" content="타닥타닥 모바일 타자 연습 앱" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="모바일 타자 연습 - 타닥타닥" />
+    <meta name="twitter:description" content="한컴타자연습은 PC에서만. 타닥타닥은 어디서든. 모바일 타자 연습 앱." />
+    <meta name="twitter:image" content="https://eastlooo.github.io/omilsoft-official-site/assets/omilsoft-og.png" />
+    <meta name="theme-color" content="#0F172A" />
+    <link rel="canonical" href="https://eastlooo.github.io/omilsoft-official-site/tadak/" />
+    <link rel="icon" href="../assets/tadaktadak-icon.jpg" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1BCDWKTDV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-R1BCDWKTDV');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "타닥타닥",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "EducationalApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "ratingCount": "1846"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      },
+      "description": "모바일 한글 타자 연습 앱. 자리 연습, 단어 연습, 커뮤니티 글 연습까지."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "모바일 타자 연습이란?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PC 없이도 스마트폰에서 한글 타자 연습을 할 수 있습니다. 타닥타닥은 자리 연습, 단어 연습, 문장 연습까지 체계적인 커리큘럼을 제공하는 모바일 타자 연습 앱입니다. 블루투스 키보드를 연결하면 속기사 연습용으로도 활용할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "왜 타닥타닥인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3년간 운영되며 12,000명 이상의 월간 사용자가 선택한 타자 연습 앱입니다. 게이미피케이션으로 매일 꾸준히, 글로벌 리더보드로 경쟁하며 실력을 키울 수 있습니다. iOS와 Android 모두 지원합니다."
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <span class="hero-badge"><span class="dot"></span> iOS & Android 출시</span>
+        <h1>모바일에서<br /><span class="accent">타자 연습</span>하세요</h1>
+        <p class="hero-sub">한컴타자연습은 PC에서만. 타닥타닥은 어디서든. 지금 바로 체험해보세요.</p>
+
+        <div class="demo-section" role="application" aria-label="타자 연습 데모">
+          <div class="demo-header">
+            <span class="demo-label">지금 바로 체험</span>
+            <div class="demo-stats">
+              <span>속도 <strong id="live-cpm">0</strong> CPM</span>
+              <span>정확도 <strong id="live-accuracy">-</strong></span>
+            </div>
+          </div>
+          <div id="demo-text" class="demo-text-area" aria-live="polite"></div>
+          <input id="demo-input" class="demo-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="타자 입력" />
+          <p id="demo-prompt" class="demo-prompt">키보드로 위 문장을 따라 쳐보세요 <span class="key">Enter</span> 로 시작</p>
+          <div id="demo-result" class="demo-result" aria-live="polite">
+            <div class="demo-result-stats">
+              <div class="demo-result-stat">
+                <strong id="stat-cpm">0</strong>
+                <span>CPM</span>
+              </div>
+              <div class="demo-result-stat">
+                <strong id="stat-accuracy">0%</strong>
+                <span>정확도</span>
+              </div>
+            </div>
+            <p style="color: #94A3B8; margin-bottom: 20px;">앱에서 더 많은 연습을 해보세요</p>
+            <div class="store-buttons" style="justify-content: center; margin-top: 0;">
+              <a class="store-btn store-btn--ios" href="https://apps.apple.com/kr/app/id6443688240" target="_blank" rel="noreferrer" data-store="ios">App Store</a>
+              <a class="store-btn store-btn--android" href="https://play.google.com/store/apps/details?id=com.dongcheon.tadak" target="_blank" rel="noreferrer" data-store="android">Google Play</a>
+            </div>
+            <button id="btn-restart" class="btn-restart" style="margin-top: 12px;">다시하기</button>
+          </div>
+        </div>
+
+        <div class="mobile-cta">
+          <img class="app-icon" src="../assets/tadaktadak-icon.jpg" alt="타닥타닥 앱 아이콘" />
+          <p>모바일 타자 연습, 지금 시작하세요</p>
+        </div>
+
+        <div class="store-buttons">
+          <a class="store-btn store-btn--ios" href="https://apps.apple.com/kr/app/id6443688240" target="_blank" rel="noreferrer" data-store="ios">App Store에서 다운로드</a>
+          <a class="store-btn store-btn--android" href="https://play.google.com/store/apps/details?id=com.dongcheon.tadak" target="_blank" rel="noreferrer" data-store="android">Google Play에서 다운로드</a>
+        </div>
+
+        <div class="social-proof">
+          <div class="proof-item">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <strong>4.6</strong> / 1,846개 리뷰
+          </div>
+          <div class="proof-item">
+            <strong>12K+</strong> 월간 사용자
+          </div>
+          <div class="proof-item">
+            <strong>3년</strong> 연속 운영
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">주요 기능</p>
+          <h2>PC에서만 하던 타자 연습,<br />이제 모바일에서</h2>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card feature-card--highlight">
+            <div class="emoji">&#9000;</div>
+            <h3>자리 연습 & 단어 연습</h3>
+            <p>기본 키 위치부터 시작해서 10가지 카테고리의 단어 드릴까지. 한글/영문 모두 지원.</p>
+          </div>
+          <div class="feature-card">
+            <div class="emoji">&#127942;</div>
+            <h3>게이미피케이션</h3>
+            <p>스트릭, XP, 레벨, 글로벌 리더보드. 매일 5분 습관.</p>
+          </div>
+          <div class="feature-card">
+            <div class="emoji">&#127760;</div>
+            <h3>커뮤니티</h3>
+            <p>다른 사용자의 글로 연습하고, 내 글을 공유하세요.</p>
+          </div>
+          <div class="feature-card">
+            <div class="emoji">&#127468;&#127463;</div>
+            <h3>한글 · 영문 지원</h3>
+            <p>한글과 영문 타자 연습을 하나의 앱에서. 기본자리부터 실전까지.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews-header">
+          <div class="big-rating">4.6</div>
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rating-detail">App Store 1,846개 리뷰</p>
+        </div>
+        <div class="review-grid">
+          <div class="review-card">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p class="text">"한컴 타자연습보다 나은것 같아요. 글도 다양하고 아이패드용 타자연습 앱으로 강추합니다."</p>
+            <span class="author">iPad / 외부 키보드 사용자</span>
+          </div>
+          <div class="review-card">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p class="text">"모바일에는 타자 연습기가 없었는데, 이 앱을 깔고 나서 키보드를 들고 다니며 타자 연습하기 좋았습니다."</p>
+            <span class="author">외부 키보드 사용자</span>
+          </div>
+          <div class="review-card">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p class="text">"타자 속도/실력이 확실히 늘고 심심할때 틈틈히 하면 재미도 있어요~"</p>
+            <span class="author">일반 사용자</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <h2>타자 연습, 지금 시작하세요</h2>
+        <p>무료로 다운로드. 광고 제거 옵션 1,100원.</p>
+        <div class="store-buttons">
+          <a class="store-btn store-btn--ios" href="https://apps.apple.com/kr/app/id6443688240" target="_blank" rel="noreferrer" data-store="ios">App Store</a>
+          <a class="store-btn store-btn--android" href="https://play.google.com/store/apps/details?id=com.dongcheon.tadak" target="_blank" rel="noreferrer" data-store="android">Google Play</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seo-section">
+      <div class="container">
+        <div class="seo-grid">
+          <div>
+            <h3>모바일 타자 연습이란?</h3>
+            <p>PC 없이도 스마트폰에서 한글 타자 연습을 할 수 있습니다. 타닥타닥은 자리 연습, 단어 연습, 문장 연습까지 체계적인 커리큘럼을 제공하는 모바일 타자 연습 앱입니다. 블루투스 키보드를 연결하면 속기사 연습용으로도 활용할 수 있습니다.</p>
+          </div>
+          <div>
+            <h3>왜 타닥타닥인가요?</h3>
+            <p>3년간 운영되며 12,000명 이상의 월간 사용자가 선택한 타자 연습 앱입니다. 게이미피케이션으로 매일 꾸준히, 글로벌 리더보드로 경쟁하며 실력을 키울 수 있습니다. iOS와 Android 모두 지원합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 OMILSOFT. <a href="../index.html">공식 사이트</a> · <a href="https://eastlooo.github.io/tadak-legal/privacy.html" target="_blank" rel="noreferrer">개인정보처리방침</a> · <a href="https://eastlooo.github.io/tadak-legal/terms.html" target="_blank" rel="noreferrer">이용약관</a></p>
+      </div>
+    </footer>
+
+    <div class="sticky-cta" aria-label="앱 다운로드">
+      <a class="store-btn store-btn--ios" href="https://apps.apple.com/kr/app/id6443688240" target="_blank" rel="noreferrer" data-store="ios">App Store</a>
+      <a class="store-btn store-btn--android" href="https://play.google.com/store/apps/details?id=com.dongcheon.tadak" target="_blank" rel="noreferrer" data-store="android">Google Play</a>
+    </div>
+
+    <script src="typing-demo.js"></script>
+  </body>
+</html>
