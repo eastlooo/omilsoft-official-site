@@ -358,7 +358,14 @@ a { color: inherit; }
   background: rgba(255, 255, 255, 0.03);
 }
 
-.feature-card .emoji { font-size: 2rem; margin-bottom: 12px; }
+.feature-number {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
 
 .feature-card h3 {
   font-size: 1.1rem;
