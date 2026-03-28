@@ -245,5 +245,15 @@
     </div>
 
     <script src="typing-demo.js"></script>
+    <script>
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        var io = new IntersectionObserver(function(entries) {
+          entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.feature-card,.review-card,.section-header,.hero-brand,.social-proof').forEach(function(el) { io.observe(el); });
+      } else {
+        document.querySelectorAll('.feature-card,.review-card,.section-header,.hero-brand,.social-proof').forEach(function(el) { el.classList.add('visible'); });
+      }
+    </script>
   </body>
 </html>

@@ -552,6 +552,45 @@ footer a:hover { color: var(--text-secondary); }
   .social-proof { flex-direction: column; gap: 12px; }
 }
 
+/* ── Scroll animations ── */
+.feature-card,
+.review-card,
+.section-header,
+.hero-brand,
+.social-proof {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.feature-card.visible,
+.review-card.visible,
+.section-header.visible,
+.hero-brand.visible,
+.social-proof.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-card:nth-child(2) { transition-delay: 0.08s; }
+.feature-card:nth-child(3) { transition-delay: 0.16s; }
+.feature-card:nth-child(4) { transition-delay: 0.24s; }
+
+.review-card:nth-child(2) { transition-delay: 0.08s; }
+.review-card:nth-child(3) { transition-delay: 0.16s; }
+
+.demo-section {
+  transition: box-shadow 0.3s ease;
+}
+
+.demo-section:focus-within {
+  box-shadow: 0 0 0 2px var(--accent), 0 0 40px rgba(56, 189, 248, 0.15);
+}
+
+.store-btn:hover {
+  box-shadow: 0 8px 24px var(--accent-glow);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
