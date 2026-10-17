@@ -43,7 +43,7 @@ a {
 a:hover {
   color:var(--link);
 }
-a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible {
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[tabindex="0"]:focus-visible {
   outline:3px solid var(--cobalt);
   outline-offset:5px;
 }
@@ -195,22 +195,21 @@ section[id] {
   overflow:hidden;
 }
 .hero-screens {
-  height:390px;
   display:flex;
   gap:18px;
   justify-content:center;
-  overflow:hidden;
   align-items:flex-start;
+  padding-bottom:34px;
 }
 .hero-screens picture {
   flex:1;
-  max-width:218px;
+  max-width:184px;
   border:1px solid var(--line);
   border-radius:13px;
   overflow:hidden;
 }
-.hero-screens .screen-result {
-  margin-top:42px;
+.hero-screens img {
+  width:100%;
 }
 .hero-caption {
   display:flex;
@@ -531,9 +530,6 @@ section[id] {
   .company-hero {
     padding-block:108px;
   }
-  .hero-screens {
-    height:420px;
-  }
 }
 @media(max-width:1000px) {
   .container {
@@ -551,7 +547,7 @@ section[id] {
   }
   .hero-screens {
     gap:12px;
-    height:340px;
+    padding-bottom:24px;
   }
   .hero-caption {
     font-size:11px;
@@ -647,7 +643,6 @@ section[id] {
     padding:24px 22px 0;
   }
   .hero-screens {
-    height:294px;
     gap:14px;
   }
   .hero-screens picture {
@@ -708,20 +703,20 @@ section[id] {
   .story-gallery {
     gap:12px;
     margin-top:32px;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:none;
+    grid-auto-flow:column;
+    grid-auto-columns:84%;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    padding-bottom:8px;
   }
-  .story-gallery figure:last-child {
-    grid-column:1/-1;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-    align-items:end;
+  .story-gallery::-webkit-scrollbar {
+    display:none;
   }
-  .story-gallery figure:last-child figcaption {
-    align-self:end;
-    flex-direction:column;
-    gap:4px;
-    padding:0 0 12px 4px;
+  .story-gallery figure {
+    scroll-snap-align:start;
   }
   .story-gallery figcaption {
     font-size:12px;

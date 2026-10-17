@@ -51,12 +51,11 @@
   border-radius:3px;
 }
 .home-screen {
-  width:246px;
-  margin:auto;
-  height:477px;
+  width:min(100%,220px);
+  margin:0 auto 36px;
   overflow:hidden;
   border:1px solid var(--line);
-  border-radius:15px 15px 0 0;
+  border-radius:15px;
 }
 .home-screen img {
   width:100%;
@@ -255,14 +254,14 @@
   overflow:hidden;
 }
 .practice-screens picture {
-  width:50%;
+  flex:1;
+  align-self:flex-start;
   border:1px solid var(--line);
   border-radius:10px;
   overflow:hidden;
 }
-.practice-screens picture:last-child {
-  margin-top:38px;
-  align-self:start;
+.practice-screens img {
+  width:100%;
 }
 .faq-section {
   display:grid;
@@ -314,7 +313,7 @@
     padding:28px 24px 0;
   }
   .home-screen {
-    width:220px;
+    margin-bottom:28px;
   }
   .practice-layout {
     gap:32px;
@@ -360,8 +359,7 @@
     padding:28px 32px 0;
   }
   .home-screen {
-    height:350px;
-    width:214px;
+    width:min(100%,190px);
   }
   .image-caption {
     padding-block:16px;
