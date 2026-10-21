@@ -550,6 +550,7 @@
   }
   .hero-stage {
     min-height:420px;
+    padding-block:64px 48px;
   }
   .hero-phone {
     width:210px;
@@ -732,6 +733,9 @@
   }
 }
 @media(prefers-color-scheme:dark) {
+  .char.wrong {
+    color:#ffad98;
+  }
   .hero-stage {
     background:#273345;
   }
