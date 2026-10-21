@@ -5,7 +5,7 @@ const vm = require('node:vm');
 const sentence = '하늘이 맑은 날에는 산책을 하고 싶어요.';
 
 // A small DOM/event harness tests the input-value path used by desktop and mobile IMEs.
-function demo() {
+function demo(lang = 'ko') {
   class Element {
     constructor() { this.value = ''; this.textContent = ''; this.children = []; this.events = {}; this.hidden = true; this.readOnly = false; }
     addEventListener(name, callback) { (this.events[name] ||= []).push(callback); }
@@ -17,7 +17,7 @@ function demo() {
   }
   const elements = new Map();
   const document = {
-    activeElement: null, hidden: false, events: {},
+    activeElement: null, hidden: false, events: {}, documentElement: { lang },
     getElementById(id) { if (!elements.has(id)) elements.set(id, new Element()); return elements.get(id); },
     createElement() { return new Element(); },
     createDocumentFragment() { return new Element(); },
@@ -93,4 +93,18 @@ test('reset clears result, unlocks input, resets stats, and focuses input', () =
   assert.equal(d.document.activeElement, d.input);
   d.type(sentence);
   assert.equal(d.events.filter(e => e[1] === 'demo_start').length, 2);
+});
+
+test('English landing practices the English sentence and uses English feedback', () => {
+  const d = demo('en');
+  const englishSentence = 'A little practice makes every day a little better.';
+  d.type('A');
+  assert.match(d.get('demo-prompt').textContent, /Type to the end/);
+  d.advance(60000);
+  d.type(englishSentence);
+  assert.equal(d.get('demo-result').hidden, false);
+  assert.equal(d.get('stat-cpm').textContent, englishSentence.length);
+  assert.equal(d.get('stat-accuracy').textContent, '100%');
+  d.get('btn-restart').emit('click');
+  assert.match(d.get('demo-prompt').textContent, /Select the input/);
 });

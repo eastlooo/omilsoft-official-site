@@ -1,6 +1,16 @@
 (function () {
   'use strict';
-  var sentence = '하늘이 맑은 날에는 산책을 하고 싶어요.';
+  var english = document.documentElement && document.documentElement.lang === 'en';
+  var sentence = english ? 'A little practice makes every day a little better.' : '하늘이 맑은 날에는 산책을 하고 싶어요.';
+  var messages = english ? {
+    active: 'Type to the end. You can correct mistakes with Backspace.',
+    complete: 'Practice complete. Select Try again to restart.',
+    ready: 'Select the input to start. Mistakes are underlined.'
+  } : {
+    active: '문장 끝까지 입력해보세요. Backspace로 고칠 수 있습니다.',
+    complete: '연습 완료. 다시 연습을 누르면 처음부터 시작합니다.',
+    ready: '입력란을 눌러 시작하세요. 틀린 글자는 밑줄로 표시됩니다.'
+  };
   var target = Array.from(sentence);
   var input = document.getElementById('demo-input');
   var text = document.getElementById('demo-text');
@@ -59,7 +69,7 @@
   function start() {
     if (!started) {
       started = true;
-      prompt.textContent = '문장 끝까지 입력해보세요. Backspace로 고칠 수 있습니다.';
+      prompt.textContent = messages.active;
       track('demo_start');
     }
     resume();
@@ -79,7 +89,7 @@
       document.getElementById('stat-cpm').textContent = values.cpm;
       document.getElementById('stat-accuracy').textContent = values.accuracy;
       result.hidden = false;
-      prompt.textContent = '연습 완료. 다시 연습을 누르면 처음부터 시작합니다.';
+      prompt.textContent = messages.complete;
       track('demo_complete', { cpm: values.cpm, accuracy: parseInt(values.accuracy, 10) });
       input.blur();
     } else {
@@ -106,7 +116,7 @@
     pause();
     composing = false; finished = false; started = false; elapsed = 0;
     input.readOnly = false; input.value = ''; result.hidden = true;
-    prompt.textContent = '입력란을 눌러 시작하세요. 틀린 글자는 밑줄로 표시됩니다.';
+    prompt.textContent = messages.ready;
     render(); input.focus();
   });
   document.querySelectorAll('[data-store]').forEach(function (link) {
