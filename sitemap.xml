@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://eastlooo.github.io/omilsoft-official-site/</loc>
-    <lastmod>2026-10-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eastlooo.github.io/omilsoft-official-site/en/</loc>
-    <lastmod>2026-10-18</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://eastlooo.github.io/omilsoft-official-site/operator-info.html</loc>
-    <lastmod>2026-10-18</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://eastlooo.github.io/omilsoft-official-site/en/operator-info.html</loc>
-    <lastmod>2026-10-18</lastmod>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://eastlooo.github.io/omilsoft-official-site/tadak/</loc>
-    <lastmod>2026-10-18</lastmod>
-    <priority>1.0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://eastlooo.github.io/omilsoft-official-site/</loc><lastmod>2026-10-21</lastmod><xhtml:link rel="alternate" hreflang="ko" href="https://eastlooo.github.io/omilsoft-official-site/"/><xhtml:link rel="alternate" hreflang="en" href="https://eastlooo.github.io/omilsoft-official-site/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://eastlooo.github.io/omilsoft-official-site/"/></url>
+  <url><loc>https://eastlooo.github.io/omilsoft-official-site/en/</loc><lastmod>2026-10-21</lastmod><xhtml:link rel="alternate" hreflang="ko" href="https://eastlooo.github.io/omilsoft-official-site/"/><xhtml:link rel="alternate" hreflang="en" href="https://eastlooo.github.io/omilsoft-official-site/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://eastlooo.github.io/omilsoft-official-site/"/></url>
+  <url><loc>https://eastlooo.github.io/omilsoft-official-site/tadak/</loc><lastmod>2026-10-21</lastmod><xhtml:link rel="alternate" hreflang="ko" href="https://eastlooo.github.io/omilsoft-official-site/tadak/"/><xhtml:link rel="alternate" hreflang="en" href="https://eastlooo.github.io/omilsoft-official-site/en/tadak/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://eastlooo.github.io/omilsoft-official-site/tadak/"/></url>
+  <url><loc>https://eastlooo.github.io/omilsoft-official-site/en/tadak/</loc><lastmod>2026-10-21</lastmod><xhtml:link rel="alternate" hreflang="ko" href="https://eastlooo.github.io/omilsoft-official-site/tadak/"/><xhtml:link rel="alternate" hreflang="en" href="https://eastlooo.github.io/omilsoft-official-site/en/tadak/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://eastlooo.github.io/omilsoft-official-site/tadak/"/></url>
+  <url><loc>https://eastlooo.github.io/omilsoft-official-site/operator-info.html</loc><lastmod>2026-10-21</lastmod><xhtml:link rel="alternate" hreflang="ko" href="https://eastlooo.github.io/omilsoft-official-site/operator-info.html"/><xhtml:link rel="alternate" hreflang="en" href="https://eastlooo.github.io/omilsoft-official-site/en/operator-info.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://eastlooo.github.io/omilsoft-official-site/operator-info.html"/></url>
+  <url><loc>https://eastlooo.github.io/omilsoft-official-site/en/operator-info.html</loc><lastmod>2026-10-21</lastmod><xhtml:link rel="alternate" hreflang="ko" href="https://eastlooo.github.io/omilsoft-official-site/operator-info.html"/><xhtml:link rel="alternate" hreflang="en" href="https://eastlooo.github.io/omilsoft-official-site/en/operator-info.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://eastlooo.github.io/omilsoft-official-site/operator-info.html"/></url>
 </urlset>
